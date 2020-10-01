@@ -34,9 +34,6 @@ def generate_cython() -> list:
     return extensions
 
 
-with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'version')) as version_file:
-    package_version = version_file.read().strip()
-
 setup(
     ext_modules=generate_cython(),
     name="baby_skynet",
