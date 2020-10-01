@@ -37,7 +37,7 @@ def generate_cython() -> list:
 setup(
     ext_modules=generate_cython(),
     name="baby_skynet",
-    version="0.5.5",
+    version="1.0",
     author="Arnold",
     author_email="arnold@has.to.come",
     description="A package for reaching Transcendence",
