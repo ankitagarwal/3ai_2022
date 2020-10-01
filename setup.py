@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
-def generate_cython() -> list:
+def generate_extensions() -> list:
     """
         Method to generate cython extensions.
     Returns:
@@ -35,7 +35,7 @@ def generate_cython() -> list:
 
 
 setup(
-    ext_modules=generate_cython(),
+    ext_modules=generate_extensions(),
     name="baby_skynet",
     version="1.0",
     author="Arnold",
